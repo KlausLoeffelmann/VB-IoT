@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "01 - BlinkyVb", "01 - BlinkyVb\01 - BlinkyVb.vbproj", "{09D607B5-088A-499B-82DE-2506A6523228}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09D607B5-088A-499B-82DE-2506A6523228}.Debug|ARM.ActiveCfg = Debug|ARM
+		{09D607B5-088A-499B-82DE-2506A6523228}.Debug|ARM.Build.0 = Debug|ARM
+		{09D607B5-088A-499B-82DE-2506A6523228}.Debug|ARM.Deploy.0 = Debug|ARM
+		{09D607B5-088A-499B-82DE-2506A6523228}.Debug|x64.ActiveCfg = Debug|x64
+		{09D607B5-088A-499B-82DE-2506A6523228}.Debug|x64.Build.0 = Debug|x64
+		{09D607B5-088A-499B-82DE-2506A6523228}.Debug|x64.Deploy.0 = Debug|x64
+		{09D607B5-088A-499B-82DE-2506A6523228}.Debug|x86.ActiveCfg = Debug|x86
+		{09D607B5-088A-499B-82DE-2506A6523228}.Debug|x86.Build.0 = Debug|x86
+		{09D607B5-088A-499B-82DE-2506A6523228}.Debug|x86.Deploy.0 = Debug|x86
+		{09D607B5-088A-499B-82DE-2506A6523228}.Release|ARM.ActiveCfg = Release|ARM
+		{09D607B5-088A-499B-82DE-2506A6523228}.Release|ARM.Build.0 = Release|ARM
+		{09D607B5-088A-499B-82DE-2506A6523228}.Release|ARM.Deploy.0 = Release|ARM
+		{09D607B5-088A-499B-82DE-2506A6523228}.Release|x64.ActiveCfg = Release|x64
+		{09D607B5-088A-499B-82DE-2506A6523228}.Release|x64.Build.0 = Release|x64
+		{09D607B5-088A-499B-82DE-2506A6523228}.Release|x64.Deploy.0 = Release|x64
+		{09D607B5-088A-499B-82DE-2506A6523228}.Release|x86.ActiveCfg = Release|x86
+		{09D607B5-088A-499B-82DE-2506A6523228}.Release|x86.Build.0 = Release|x86
+		{09D607B5-088A-499B-82DE-2506A6523228}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C034C83-068B-4F2E-93B5-891D6A1A7744}
+	EndGlobalSection
+EndGlobal

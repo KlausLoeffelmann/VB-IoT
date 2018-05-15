@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="BlinkyVb.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BlinkyVb"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Ellipse x:Name="LED" Fill="LightGray" Stroke="White" 
+                     Width="100" Height="100" Margin="10"/>
+            <TextBlock x:Name="DelayText" Text="500 ms" 
+                       Margin="10" TextAlignment="Center" FontSize="28"/>
+            <TextBlock x:Name="GpioStatusText"
+                       Text="Warten, dass GPIO initialisiert wird..."
+                       Margin="10,50,10,10"
+                       TextAlignment="Center"
+                       FontSize="28"/>
+        </StackPanel>
+    </Grid>
+</Page>
