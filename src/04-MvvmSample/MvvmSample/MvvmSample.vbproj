@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{D5F4DFAA-5DCB-499A-95C4-1F950EE4BB8D}</ProjectGuid>
+    <ProjectGuid>{A32B75B9-A602-4C22-B416-C0730D802A66}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <RootNamespace>MvvmSample</RootNamespace>
     <AssemblyName>MvvmSample</AssemblyName>
@@ -16,7 +16,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
-    <PackageCertificateKeyFile>03 - MvvmSample_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>MvvmSample_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -25,10 +25,10 @@
     <OutputPath>bin\x86\Debug\</OutputPath>
     <DefineConstants>NETFX_CORE,WINDOWS_UWP</DefineConstants>
     <DebugType>full</DebugType>
-    <PlatformTarget>ARM</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <Prefer32Bit>true</Prefer32Bit>
-    <DocumentationFile>_03___MvvmSample.xml</DocumentationFile>
+    <DocumentationFile>MvvmSample.xml</DocumentationFile>
     <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
@@ -40,7 +40,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <Prefer32Bit>true</Prefer32Bit>
-    <DocumentationFile>_03___MvvmSample.xml</DocumentationFile>
+    <DocumentationFile>MvvmSample.xml</DocumentationFile>
     <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
   </PropertyGroup>
@@ -54,7 +54,7 @@
     <PlatformTarget>ARM</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <Prefer32Bit>true</Prefer32Bit>
-    <DocumentationFile>_03___MvvmSample.xml</DocumentationFile>
+    <DocumentationFile>MvvmSample.xml</DocumentationFile>
     <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
@@ -66,7 +66,7 @@
     <PlatformTarget>ARM</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <Prefer32Bit>true</Prefer32Bit>
-    <DocumentationFile>_03___MvvmSample.xml</DocumentationFile>
+    <DocumentationFile>MvvmSample.xml</DocumentationFile>
     <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
   </PropertyGroup>
@@ -80,7 +80,7 @@
     <PlatformTarget>x64</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <Prefer32Bit>true</Prefer32Bit>
-    <DocumentationFile>_03___MvvmSample.xml</DocumentationFile>
+    <DocumentationFile>MvvmSample.xml</DocumentationFile>
     <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
@@ -92,7 +92,7 @@
     <PlatformTarget>x64</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <Prefer32Bit>true</Prefer32Bit>
-    <DocumentationFile>_03___MvvmSample.xml</DocumentationFile>
+    <DocumentationFile>MvvmSample.xml</DocumentationFile>
     <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
   </PropertyGroup>
@@ -112,7 +112,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="03 - MvvmSample_TemporaryKey.pfx" />
+    <None Include="MvvmSample_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="My Project\Default.rd.xml" />
@@ -123,7 +123,6 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-    <Content Include="Snippet.txt" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -172,7 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MvvmLibrary\MvvmLibrary.vbproj">
-      <Project>{eef1fb3d-0d7a-48dd-8a1e-913ffc2dcce3}</Project>
+      <Project>{e0162d58-0e34-4285-aa84-333b8c707a20}</Project>
       <Name>MvvmLibrary</Name>
     </ProjectReference>
   </ItemGroup>

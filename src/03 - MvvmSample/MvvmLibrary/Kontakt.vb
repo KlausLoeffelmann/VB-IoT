@@ -55,6 +55,6 @@ Public Class Kontakt
         End Set
     End Property
 
-    Public Property Firstname As String
+
 
 End Class

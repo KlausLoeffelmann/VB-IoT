@@ -9,7 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="TestButton" Content="Testbutton"
-                HorizontalAlignment="Center"/>
+
     </Grid>
 </Page>
