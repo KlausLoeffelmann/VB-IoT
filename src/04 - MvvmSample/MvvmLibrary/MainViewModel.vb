@@ -9,8 +9,13 @@ Public Class MainViewModel
     Public Sub New()
         myAddCommand = New RelayCommand(
             Async Sub(value As Object)
-                Await ModalDialogAdapter.ShowDialogAsync(New KontaktViewModel)
+                Dim kontakt = New KontaktViewModel
+                Dim dr = Await ModalDialogAdapter.ShowDialogAsync(kontakt)
+                If dr = ModalDialogResult.OK Then
+                    Kontakte.Add(kontakt)
+                End If
             End Sub)
+
     End Sub
 
     Public Property Kontakte As ObservableCollection(Of KontaktViewModel)
