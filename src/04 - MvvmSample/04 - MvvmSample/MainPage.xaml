@@ -52,7 +52,8 @@
         </ListView>
         <Button Grid.Row="0" Grid.Column="1" Content="Add"
                 FontSize="24" Margin="10,10,10,10"
-                HorizontalAlignment="Stretch" Click="Button_Click"/>
+                HorizontalAlignment="Stretch"
+                Command="{Binding AddCommand}"/>
         <Button Grid.Row="1" Grid.Column="1" Content="Edit"
                 FontSize="24" Margin="10,10,10,10"
                 HorizontalAlignment="Stretch"/>

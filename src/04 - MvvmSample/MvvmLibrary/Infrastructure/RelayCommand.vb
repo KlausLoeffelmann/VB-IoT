@@ -1,24 +1,4 @@
-﻿Imports System.ComponentModel
-Imports System.Runtime.CompilerServices
-Imports System.Windows.Input
-
-Public Class BindableBase
-    Implements INotifyPropertyChanged
-
-    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
-
-    Public Function SetProperty(Of t)(ByRef backingField As t, value As t,
-                                <CallerMemberNameAttribute> Optional PropertyName As String = Nothing) As Boolean
-        If Not Object.Equals(backingField, value) Then
-            backingField = value
-            RaiseEvent PropertyChanged(Me,
-                            New PropertyChangedEventArgs(PropertyName))
-            Return True
-        End If
-
-        Return False
-    End Function
-End Class
+﻿Imports System.Windows.Input
 
 Public Class RelayCommand
     Implements ICommand
@@ -36,18 +16,26 @@ Public Class RelayCommand
 
         'Expression Lambda: Nur ein EINZELNER Ausdruck.
         myCanExecuteFunc = Function(obj As Object) True
+    End Sub
 
+    Public Sub New(executeAction As Action(Of Object),
+                   canExecuteFunc As Func(Of Object, Boolean))
+        myExecuteAction = executeAction
+        myCanExecuteFunc = canExecuteFunc
+    End Sub
 
+    Public Sub NotifyCanExecuteChanged()
+        RaiseEvent CanExecuteChanged(Me, EventArgs.Empty)
     End Sub
 
     Public Event CanExecuteChanged As EventHandler Implements ICommand.CanExecuteChanged
 
     Public Sub Execute(parameter As Object) Implements ICommand.Execute
-        Throw New NotImplementedException()
+        myExecuteAction(parameter)
     End Sub
 
     Public Function CanExecute(parameter As Object) As Boolean Implements ICommand.CanExecute
-        Throw New NotImplementedException()
+        Return myCanExecuteFunc(parameter)
     End Function
 End Class
 

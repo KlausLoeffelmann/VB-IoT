@@ -4,6 +4,14 @@ Public Class MainViewModel
     Inherits BindableBase
 
     Private myKontakte As ObservableCollection(Of KontaktViewModel)
+    Private myAddCommand As RelayCommand
+
+    Public Sub New()
+        myAddCommand = New RelayCommand(
+            Async Sub(value As Object)
+                Await ModalDialogAdapter.ShowDialogAsync(New KontaktViewModel)
+            End Sub)
+    End Sub
 
     Public Property Kontakte As ObservableCollection(Of KontaktViewModel)
         Get
@@ -14,9 +22,14 @@ Public Class MainViewModel
         End Set
     End Property
 
-    Async Sub ButtonClick()
-        Await ModalDialogAdapter.ShowDialogAsync(New KontaktViewModel)
-    End Sub
+    Public Property AddCommand As RelayCommand
+        Get
+            Return myAddCommand
+        End Get
+        Set(value As RelayCommand)
+            SetProperty(myAddCommand, value)
+        End Set
+    End Property
 
     Public Function DemoKontakte() As ObservableCollection(Of KontaktViewModel)
 

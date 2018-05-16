@@ -20,26 +20,4 @@ Public NotInheritable Class MainPage
         Me.DataContext = mainViewModel
 
     End Sub
-
-    Private Async Sub Button_Click(sender As Object, e As RoutedEventArgs)
-
-        Dim addPage = New KontaktDetailsView
-        Math.Abs(-20)
-        Dim dialog = New ContentDialog() With {
-            .Width = 700,
-            .Title = "Kontakt hinzufügen",
-            .Content = addPage
-        }
-
-        dialog.PrimaryButtonText = "OK"
-        dialog.SecondaryButtonText = "Abbrechen"
-        dialog.IsPrimaryButtonEnabled = True
-        dialog.IsSecondaryButtonEnabled = True
-        AddHandler dialog.PrimaryButtonClick,
-            Sub()
-
-            End Sub
-
-        Dim result = Await dialog.ShowAsync()
-    End Sub
 End Class
